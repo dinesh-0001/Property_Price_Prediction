@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Property Price Pridiction</title>
+</head>
+<body class="body">
+    <!-- <h1>Under Development</h1> -->
+    <!-- Navigation bar -->
+    <nav id="navbar">
+      <ul class="nav-list">
+          <li> <a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <span class="gitinst" id="contact">
+          <a href="https://github.com/dinesh-0001" target="_blank"><img src="img/github.webp" class="github" alt="Github"  ></a>
+          <a href="https://www.instagram.com/dinesh_0001_" target="_blank"><img src="img/instagram.png" id="instagram1" class="instagram" alt="Instagram"  ></a>
+          <a href="https://www.linkedin.com/in/dinesh-kumar-0001/" target="_blank"><img src="img/linkdin.webp" class="linkdin" alt="linkdin"  ></a>
+      </span>
+  </nav>
+      <div class="img"></div>
+        <form class="form" id="home">
+          <h2>Area (Square Feet)</h2>
+            <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+          <h2>BHK</h2>
+          <div class="switch-field">
+            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+            <label for="radio-bhk-1">1</label>
+            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+            <label for="radio-bhk-2">2</label>
+            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+            <label for="radio-bhk-3">3</label>
+            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+            <label for="radio-bhk-4">4</label>
+            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+            <label for="radio-bhk-5">5</label>
+          </div>
+          </form>
+        <form class="form">
+          <h2>Bath</h2>
+          <div class="switch-field">
+            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+            <label for="radio-bath-1">1</label>
+            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+            <label for="radio-bath-2">2</label>
+            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+            <label for="radio-bath-3">3</label>
+            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+            <label for="radio-bath-4">4</label>
+            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+            <label for="radio-bath-5">5</label>
+          </div>
+            <h2>Location</h2>
+          <div>
+          <select class="location" name="" id="uiLocations">
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+            <option>electronic city bangalore</option>
+                <option>rajaji nagar bangalore</option>
+          </select>
+        </div>
+          <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+          <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+        </form>
+        <div class="div_content"> 
+          <h2 class="about" >About This Website</h2>
+          <p class="content">
+            This model provides an overview of the property prices in various cities across India. It aims to offer prospective buyers an idea of the average cost of properties in different parts of the country. The prices mentioned here are based on a combination of data collected from various sources, including real estate websites, kaggle, and other relevant sources. It provides a comprehensive overview of property prices in different cities. It is important to note that the prices mentioned here are subject to change, and the actual cost of properties may vary based on a range of factors, including location, demand, supply, and other factors. Overall, our model is designed to be a Project for Personal. We did not take responsibility of the Price shown here because the sources used for prediction can be wrong.
+          </p><p id="about"></p>
+        </div>
+</body>
+</html>

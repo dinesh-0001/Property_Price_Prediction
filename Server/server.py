@@ -28,3 +28,4 @@ if __name__=="__main__":
     print("Starting Python Flask Server for Home Price Prdiction")
     util.load_saved_artifacts()
     app.run()
+    
